@@ -23,6 +23,7 @@
 		392217082436173B009A3F16 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		3922170A24361F6F009A3F16 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		3922170C24386201009A3F16 /* FilterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
+		398B33482438C86000AD6858 /* Filtering Operators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Filtering Operators.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7DA000AF4B86928ADDC1349B /* Pods-RxSwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudy.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftStudy/Pods-RxSwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		BD627954E76C3AA62CF6891B /* Pods_RxSwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C50D862432DF2500042167 /* RxSwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +50,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		398B33492438C87200AD6858 /* Photo Filter */ = {
+			isa = PBXGroup;
+			children = (
+				D2C50D8F2432DF2500042167 /* Main.storyboard */,
+				D2C50D8D2432DF2500042167 /* ViewController.swift */,
+				3922170C24386201009A3F16 /* FilterService.swift */,
+				392217082436173B009A3F16 /* PhotosCollectionViewController.swift */,
+				3922170A24361F6F009A3F16 /* PhotoCollectionViewCell.swift */,
+			);
+			path = "Photo Filter";
+			sourceTree = "<group>";
+		};
 		7050DDDE9AFE8D3BC3723914 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,11 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				D2C50D9D2432DF4C00042167 /* RxswiftPlayground.playground */,
-				D2C50D8F2432DF2500042167 /* Main.storyboard */,
-				D2C50D8D2432DF2500042167 /* ViewController.swift */,
-				3922170C24386201009A3F16 /* FilterService.swift */,
-				392217082436173B009A3F16 /* PhotosCollectionViewController.swift */,
-				3922170A24361F6F009A3F16 /* PhotoCollectionViewCell.swift */,
+				398B33492438C87200AD6858 /* Photo Filter */,
+				398B33482438C86000AD6858 /* Filtering Operators.playground */,
 				D2C50D9E2432DF9C00042167 /* Supporting Files */,
 				D2C50D972432DF2600042167 /* Info.plist */,
 			);
