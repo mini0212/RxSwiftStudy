@@ -92,6 +92,7 @@ extension PhotosCollectionViewController {
                                               options: nil) { [weak self] image, info in
                                                 guard let self = self,
                                                     let info = info else { return }
+                                                // 화질구지로 받아오기
                                                 let isDegradedImage = info["PHImageResultIsDegradedKey"] as! Bool
                                                 if !isDegradedImage {
                                                     if let image = image {

@@ -17,10 +17,22 @@ class FilterService {
         self.context = CIContext()
     }
     
+    // single -> 한번만 호출
+    // completable -> 성공 여부만 받음
+    func applyFilterSingle(to inputImage: UIImage) -> Single<UIImage> {
+        return Single<UIImage>.create { observer -> Disposable in
+            self.applyFilter(to: inputImage) { filterImage in
+                observer(.success(filterImage))
+            }
+            return Disposables.create()
+        }
+    }
+    
     func applyFilter(to inputImage: UIImage) -> Observable<UIImage> {
         return Observable<UIImage>.create { observer in
             self.applyFilter(to: inputImage) { filteredImage in
                 observer.onNext(filteredImage)
+                observer.onCompleted()
             }
             return Disposables.create()
         }
