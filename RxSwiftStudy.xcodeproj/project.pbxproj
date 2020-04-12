@@ -10,6 +10,10 @@
 		392217092436173B009A3F16 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392217082436173B009A3F16 /* PhotosCollectionViewController.swift */; };
 		3922170B24361F6F009A3F16 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922170A24361F6F009A3F16 /* PhotoCollectionViewCell.swift */; };
 		3922170D24386201009A3F16 /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922170C24386201009A3F16 /* FilterService.swift */; };
+		39B79752243F7AAE008B6C30 /* ToDo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B79751243F7AAE008B6C30 /* ToDo.storyboard */; };
+		39B79754243F7AD4008B6C30 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B79753243F7AD4008B6C30 /* TodoListViewController.swift */; };
+		39B797572440BE71008B6C30 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B797562440BE71008B6C30 /* AddTaskViewController.swift */; };
+		39B797592440C00E008B6C30 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B797582440C00E008B6C30 /* Task.swift */; };
 		6B742D5D103823C2381D9637 /* Pods_RxSwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD627954E76C3AA62CF6891B /* Pods_RxSwiftStudy.framework */; };
 		D2C50D8A2432DF2500042167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C50D892432DF2500042167 /* AppDelegate.swift */; };
 		D2C50D8C2432DF2500042167 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C50D8B2432DF2500042167 /* SceneDelegate.swift */; };
@@ -24,6 +28,10 @@
 		3922170A24361F6F009A3F16 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		3922170C24386201009A3F16 /* FilterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
 		398B33482438C86000AD6858 /* Filtering Operators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Filtering Operators.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		39B79751243F7AAE008B6C30 /* ToDo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToDo.storyboard; sourceTree = "<group>"; };
+		39B79753243F7AD4008B6C30 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
+		39B797562440BE71008B6C30 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		39B797582440C00E008B6C30 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		7DA000AF4B86928ADDC1349B /* Pods-RxSwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudy.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftStudy/Pods-RxSwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		BD627954E76C3AA62CF6891B /* Pods_RxSwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C50D862432DF2500042167 /* RxSwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +68,17 @@
 				3922170A24361F6F009A3F16 /* PhotoCollectionViewCell.swift */,
 			);
 			path = "Photo Filter";
+			sourceTree = "<group>";
+		};
+		39B79755243F7AE7008B6C30 /* TODO */ = {
+			isa = PBXGroup;
+			children = (
+				39B79751243F7AAE008B6C30 /* ToDo.storyboard */,
+				39B797582440C00E008B6C30 /* Task.swift */,
+				39B79753243F7AD4008B6C30 /* TodoListViewController.swift */,
+				39B797562440BE71008B6C30 /* AddTaskViewController.swift */,
+			);
+			path = TODO;
 			sourceTree = "<group>";
 		};
 		7050DDDE9AFE8D3BC3723914 /* Pods */ = {
@@ -102,6 +121,7 @@
 			children = (
 				D2C50D9D2432DF4C00042167 /* RxswiftPlayground.playground */,
 				398B33492438C87200AD6858 /* Photo Filter */,
+				39B79755243F7AE7008B6C30 /* TODO */,
 				398B33482438C86000AD6858 /* Filtering Operators.playground */,
 				D2C50D9E2432DF9C00042167 /* Supporting Files */,
 				D2C50D972432DF2600042167 /* Info.plist */,
@@ -180,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39B79752243F7AAE008B6C30 /* ToDo.storyboard in Resources */,
 				D2C50D962432DF2600042167 /* LaunchScreen.storyboard in Resources */,
 				D2C50D932432DF2600042167 /* Assets.xcassets in Resources */,
 				D2C50D912432DF2500042167 /* Main.storyboard in Resources */,
@@ -236,10 +257,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2C50D8E2432DF2500042167 /* ViewController.swift in Sources */,
+				39B797572440BE71008B6C30 /* AddTaskViewController.swift in Sources */,
+				39B79754243F7AD4008B6C30 /* TodoListViewController.swift in Sources */,
 				3922170B24361F6F009A3F16 /* PhotoCollectionViewCell.swift in Sources */,
 				D2C50D8A2432DF2500042167 /* AppDelegate.swift in Sources */,
 				3922170D24386201009A3F16 /* FilterService.swift in Sources */,
 				D2C50D8C2432DF2500042167 /* SceneDelegate.swift in Sources */,
+				39B797592440C00E008B6C30 /* Task.swift in Sources */,
 				392217092436173B009A3F16 /* PhotosCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
