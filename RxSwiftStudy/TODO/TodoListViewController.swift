@@ -28,7 +28,19 @@ class TodoListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavBar()
-        
+//        prioritySegControl.rx
+//            .selectedSegmentIndex
+//            .asObservable()
+//            .subscribe(onNext: { index in
+//            print(index)
+//            }).disposed(by: disposeBag)
+        Observable.combineLatest(
+            prioritySegControl.rx.selectedSegmentIndex.asObservable(),
+            tasks.asObservable())
+            .subscribe(onNext: { [unowned self] index, task in
+                let priority = Priority(rawValue: index - 1)
+                self.filterTasks(by: priority)
+            }).disposed(by: disposeBag)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -44,20 +56,20 @@ class TodoListViewController: UIViewController {
 //                self.tasks.value.append(task)
                 
                 // 0번째는 all이기 때문에 -1씩 해준다
-                let priority = Priority(rawValue: self.prioritySegControl.selectedSegmentIndex - 1)
+//                let priority = Priority(rawValue: self.prioritySegControl.selectedSegmentIndex - 1)
                 
                 var existingTasks = self.tasks.value
                 existingTasks.append(task)
                 self.tasks.accept(existingTasks)
                 
-                self.filterTasks(by: priority)
+//                self.filterTasks(by: priority)
                 
             }).disposed(by: disposeBag)
     }
     
     @IBAction func priorityValueChanged(_ segControl: UISegmentedControl) {
-        let priority = Priority(rawValue: segControl.selectedSegmentIndex - 1)
-        filterTasks(by: priority)
+//        let priority = Priority(rawValue: segControl.selectedSegmentIndex - 1)
+//        filterTasks(by: priority)
     }
 }
 
