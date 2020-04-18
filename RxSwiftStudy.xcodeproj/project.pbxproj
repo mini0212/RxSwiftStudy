@@ -32,6 +32,7 @@
 		39B79753243F7AD4008B6C30 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		39B797562440BE71008B6C30 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		39B797582440C00E008B6C30 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		39BA5E042443176900B6CC45 /* Transforming Operators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Transforming Operators.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7DA000AF4B86928ADDC1349B /* Pods-RxSwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudy.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftStudy/Pods-RxSwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		BD627954E76C3AA62CF6891B /* Pods_RxSwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C50D862432DF2500042167 /* RxSwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +124,7 @@
 				398B33492438C87200AD6858 /* Photo Filter */,
 				39B79755243F7AE7008B6C30 /* TODO */,
 				398B33482438C86000AD6858 /* Filtering Operators.playground */,
+				39BA5E042443176900B6CC45 /* Transforming Operators.playground */,
 				D2C50D9E2432DF9C00042167 /* Supporting Files */,
 				D2C50D972432DF2600042167 /* Info.plist */,
 			);
