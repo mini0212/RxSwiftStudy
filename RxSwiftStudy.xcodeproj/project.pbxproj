@@ -32,6 +32,7 @@
 		3909CC6F244B368C005E73D5 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		3909CC71244B381B005E73D5 /* AritlcleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AritlcleTableViewCell.swift; sourceTree = "<group>"; };
 		3909CC75244B391E005E73D5 /* URLRequest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
+		3909CC77244C5709005E73D5 /* Combining Operators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Combining Operators.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		392217082436173B009A3F16 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		3922170A24361F6F009A3F16 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		3922170C24386201009A3F16 /* FilterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
@@ -164,6 +165,7 @@
 				39B79755243F7AE7008B6C30 /* TODO */,
 				39BA5E042443176900B6CC45 /* Transforming Operators.playground */,
 				396BE39F244B255E0035517E /* NewsApp */,
+				3909CC77244C5709005E73D5 /* Combining Operators.playground */,
 				D2C50D9E2432DF9C00042167 /* Supporting Files */,
 				D2C50D972432DF2600042167 /* Info.plist */,
 			);
