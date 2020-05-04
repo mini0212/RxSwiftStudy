@@ -69,9 +69,19 @@ extension WeatherViewController {
             let url = URL.urlForWeahterAPI(city: cityEncoded) else { return }
         let resource = WeatherResource<WeatherResult>(url: url)
         
+        
+        
+//        let search = URLRequest.load(resource: resource)
+//            .observeOn(MainScheduler.instance)
+//            .asDriver(onErrorJustReturn: WeatherResult.empty)
+        
         let search = URLRequest.load(resource: resource)
+            .retry(3) // 재 시도 할 횟수
             .observeOn(MainScheduler.instance)
-            .asDriver(onErrorJustReturn: WeatherResult.empty)
+            .catchError { error in
+                print(error.localizedDescription)
+                return Observable.just(WeatherResult.empty)
+        }.asDriver(onErrorJustReturn: WeatherResult.empty)
         
         search.map { "\($0.main.temp) ℉"}
             .drive(self.temperatureLabel.rx.text)
